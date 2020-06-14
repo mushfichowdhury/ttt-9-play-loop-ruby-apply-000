@@ -31,7 +31,7 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
-    puts "Invalid Move."
+    puts "Position already taken! Try again."
     turn(board)
   end
 end
