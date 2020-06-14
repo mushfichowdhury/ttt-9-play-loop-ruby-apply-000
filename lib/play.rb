@@ -31,8 +31,27 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
+    puts "Position already taken! Try again."
     turn(board)
   end
 end
 
 # Define your play method below
+
+def play(board)
+  turn_num = 0
+  until turn_num == 9
+  turn(board)
+  turn_num += 1
+  end
+end
+
+
+
+
+
+
+
+
+
+
